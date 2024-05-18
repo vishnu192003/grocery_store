@@ -24,6 +24,6 @@ Our mission is to ensure that every customer leaves our store satisfied and with
 
 ## Contact Us
 
-Visit us today at [The MOM's Grocery Store](https://www.momgrocerystore.com) and experience the difference in quality and service. For any inquiries or assistance, feel free to contact our friendly team at [email@example.com](mailto:momgrocerystore@gmail.com) or call us at 123-456-7890.
+Visit us today at [The MOM's Grocery Store](https://www.momgrocerystore.com) and experience the difference in quality and service. For any inquiries or assistance, feel free to contact our friendly team at [momgrocerystore@gmail.com](mailto:momgrocerystore@gmail.com) or call us at 123-456-7890.
 
 Follow us on [Facebook](https://www.facebook.com/TheMomsGroceryStore) and [Instagram](https://www.instagram.com/TheMomsGroceryStore) for updates, promotions, and delicious recipe ideas!
