@@ -7,7 +7,52 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="../index.css">
-  
+  <style>
+    
+/* email*/
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-overlay input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.form-overlay input[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #343a40;;
+  color: white;
+  cursor: pointer;
+}
+
+.form-overlay input[type="submit"]:hover {
+  background-color: #000000;
+}
+    
+  </style>
 </head>
 <body  background="../background/58.jpg" style="background-repeat: no-repeat; background-size: 100%;" >
 
@@ -43,9 +88,8 @@
   </nav>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
- 
-
+  <br><br><br><br><br><br><br><br><br>
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    
 
   <!-- Contact Section -->
@@ -198,6 +242,16 @@
     </div>
   </footer>
 
-  <script src="../index.js"></script>
+  <script >
+
+    document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('हमारे साथ जुड़ने  के लिए आपका बहुत बहुत धन्यवाद!!😊🤩');
+      // Optionally, you can reset the form after submission
+      this.reset();
+    });
+    
+
+  </script>
 </body>
 </html>

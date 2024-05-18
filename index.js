@@ -99,11 +99,4 @@ window.onload = function() {
 
  //contact
 
- document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert('हमारे साथ जुड़ने  के लिए आपका बहुत बहुत धन्यवाद!!😊🤩');
-  // Optionally, you can reset the form after submission
-  this.reset();
-});
-
 //login form
