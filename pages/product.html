@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - My Grocery Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../index.css">
+  <style>
+    .container-card{
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .primage{
+      border-radius: 20px;
+    }
+    .cardgrid{
+      border-radius: 40px;
+    }
+    .p-header{
+      height: 300;
+     text-align: center;
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      background-color: #343a40;
+      padding: 2rem;
+      
+    }
+    .button1{
+      background-color:#343a40;
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 5px 0x;
+      cursor: pointer;
+      border-radius: 20px;
+      
+     
+    }
+
+     /*card header*/
+
+     .custom-card {
+      border: 2px solid #007bff; /* Blue border */
+      border-radius: 20px;
+      background-color: #f8f9fa; /* Light gray background */
+      transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .custom-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    }
+    
+    .custom-card .card-body {
+      padding: 20px;
+    }
+    
+    .custom-card .card-title {
+      color: #007bff; /* Blue title color */
+    }
+    
+    .custom-card .price {
+      margin-top: 10px;
+    }
+    
+    .custom-card .original-price {
+      text-decoration: line-through;
+      color: #888;
+    }
+    
+    .custom-card .discounted-price {
+      font-weight: bold;
+      color: #d9534f; /* Red discounted price color */
+    }
+    .discounted-price {
+      font-weight: bold;
+      color: #d9534f;
+    }
+    .discount-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #d9534f;
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    /*email*/
+
+    .image-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .form-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    .form-overlay input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 250px;
+    }
+    
+    .form-overlay input[type="submit"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #343a40;;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .form-overlay input[type="submit"]:hover {
+      background-color: #000000;
+    }
+    
+  </style>
+</head>
+<body  background="../background/13.jpg" style="background-repeat: no-repeat; background-size: 100%;" class="img-fluid">
+
+
+ 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-header">
+    <div class="container ">
+      <a class="navbar-brand" href="./index.html" >MOM's Grocery Store </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../pages/product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../pages/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h1 class="p-header" id="fresh-fruits "> <marquee behavior="" direction="" scrollamount="20">🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;🔖 BIG DEAL'S 🔖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;      </marquee></h1>
+
+  <img src="../background/39.jpg" class="img-fluid col-md " height="400" width="100%" alt="...">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Mango</h5>
+            <div class="price">
+              <span class="original-price">$24.99</span>&nbsp;&nbsp;
+              <span class="discounted-price">$19.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">40% OFF</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Mango</h5>
+            <div class="price">
+              <span class="original-price">$24.99</span>&nbsp;
+              <span class="discounted-price">$19.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">30% OFF</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/8.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Apple</h5>
+            <div class="price">
+              <span class="original-price">$14.99</span>&nbsp;
+              <span class="discounted-price">$12.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">15% OFF</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/9.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Banana</h5>
+            <div class="price">
+              <span class="original-price">$9.99</span>
+&nbsp;              <span class="discounted-price">$7.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">40% OFF</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/10.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Orange</h5>
+            <div class="price">
+              <span class="original-price">$19.99</span>&nbsp;
+              <span class="discounted-price">$16.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">15% OFF</div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 col-lg-2">
+        <div class="card container-card-1">
+          <img class="primage card-img-top" src="../photos/11.jpg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">Grapes</h5>
+            <div class="price">
+              <span class="original-price">$14.99</span>&nbsp;
+              <span class="discounted-price">$11.99</span>
+            </div>
+            <a href="#" class="btn btn-dark button1">BUY NOW</a>
+          </div>
+          <div class="discount-badge">40% OFF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <h1 class="p-header" id="fresh-fruits"> FRESH FRIUT ' S</h1>
+
+  <div class="container mx-auto text-center">
+    
+     <div class="row">
+       <div class=" cardgrid col">
+         <div class="card container-card" style="width: 18rem;">
+             <img class="primage" src="../photos/7.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Mango</h5>
+               <p class="card-text">$19.99</p>
+               <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+
+             </div>
+           </div>
+       </div>
+       <div class="col">
+         <div class="card container-card" style="width: 18rem;">
+   <img class="primage" src="../photos/5.jpg" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h5 class="card-title">Orange</h5>
+     <p class="card-text">$19.99</p>
+     <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+   </div>
+ </div>
+       </div>
+       <div class="col">
+         <div class="card container-card" style="width: 18rem;">
+   <img class="primage" src="../photos/6.jpg" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h5 class="card-title">Banana</h5>
+     <p class="card-text">$19.99</p>
+     <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+   </div>
+ </div>
+ 
+       </div>
+     </div>
+<hr>
+<!--extra--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">30% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/8.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$12.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/9.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <div class="price">
+            <span class="original-price">$9.99</span>
+&nbsp;              <span class="discounted-price">$7.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/10.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Orange</h5>
+          <div class="price">
+            <span class="original-price">$19.99</span>&nbsp;
+            <span class="discounted-price">$16.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/11.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Grapes</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$11.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--extra-end -->
+<hr>
+     <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/22.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muskmelon</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/23.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Guava</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pomegranate</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tomato</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Watermelon</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/45.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">PineApple</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+   </div>
+
+  
+   <h1 class="p-header" id="vegtables">VEGTABLE'S</h1>
+
+   <div class="container text-center">
+     
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/21.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/19.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+    </div>
+    <hr>
+    <!--extra--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">30% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/8.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$12.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/9.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <div class="price">
+            <span class="original-price">$9.99</span>
+&nbsp;              <span class="discounted-price">$7.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/10.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Orange</h5>
+          <div class="price">
+            <span class="original-price">$19.99</span>&nbsp;
+            <span class="discounted-price">$16.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/11.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Grapes</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$11.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--extra-end -->
+    <hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/20.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/14.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/15.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+<!--extra--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">30% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/8.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$12.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/9.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <div class="price">
+            <span class="original-price">$9.99</span>
+&nbsp;              <span class="discounted-price">$7.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/10.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Orange</h5>
+          <div class="price">
+            <span class="original-price">$19.99</span>&nbsp;
+            <span class="discounted-price">$16.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/11.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Grapes</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$11.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--extra-end -->
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/13.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/10.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/11.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+<!--extra--> 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/7.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Mango</h5>
+          <div class="price">
+            <span class="original-price">$24.99</span>&nbsp;
+            <span class="discounted-price">$19.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">30% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/8.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Apple</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$12.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/9.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <div class="price">
+            <span class="original-price">$9.99</span>
+&nbsp;              <span class="discounted-price">$7.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/10.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Orange</h5>
+          <div class="price">
+            <span class="original-price">$19.99</span>&nbsp;
+            <span class="discounted-price">$16.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">15% OFF</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-lg-2">
+      <div class="card container-card-1">
+        <img class="primage card-img-top" src="../photos/11.jpg" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">Grapes</h5>
+          <div class="price">
+            <span class="original-price">$14.99</span>&nbsp;
+            <span class="discounted-price">$11.99</span>
+          </div>
+          <a href="#" class="btn btn-dark button1">BUY NOW</a>
+        </div>
+        <div class="discount-badge">40% OFF</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--extra-end -->
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/18.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/9.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+   </div>
+
+   <h1 class="p-header" id="hygine-beauty"> HYGINE & BEAUTY </h1>
+
+   <div class="container text-center">
+    
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/33.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/36.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/34.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+    </div>
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/24.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/25.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/26.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/27.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/43.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/40.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/35.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/42.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/44.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+   </div>
+   <h1 class="p-header" id="dairy-item">DAIRY ITEMS </h1>
+
+   <div class="container text-center">
+    
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/28.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/29.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/39.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+    </div>
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/37.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/38.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/30.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+    <div class="row">
+      <div class=" cardgrid col">
+        <div class="card container-card" style="width: 18rem;">
+            <img class="primage" src="../photos/31.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">$19.99</p>
+              <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/32.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card container-card" style="width: 18rem;">
+  <img class="primage" src="../photos/41.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">$19.99</p>
+    <a href="#" class="btn btn-dark button ">ADD TO CART</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+<hr>
+   </div>
+
+
+   <div class="image-container">
+    <img src="../background/35.jpg" class="img-fluid" alt="Background Image">
+    <div class="form-overlay">
+      <form id="subscribeForm">
+        <input type="email" name="email" placeholder="Send Your Feedback" required>
+        <input type="submit" value="Feedback">
+      </form>
+    </div>
+  </div>
+   <br><br><br><br><br>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">MOM's Grocery Store</h5>
+              <p class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, debitis blanditiis modi fugit quae ex excepturi voluptatibus, labore, adipisci iste sit atque ea! Quis nisi cumque earum porro, nostrum ad.
+              </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">Quick Links</h5>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">TheProviders</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Creativity</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">SourceFiles</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+              </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color:#ffffff">Useful Links</h5>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">TheProviders</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Creativity</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">SourceFiles</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">Contact Us</h5>
+              <p class="fw-semibold">
+                          
+                  <i class="fas fa-home me-3"></i><a href="#" style="text-decoration: none; color: rgb(255, 255, 255);">Hingna,Nagpur-440016</a></p>
+              <p class="fw-semibold">
+                  <i class="fas fa-envelope me-3"></i><a href="momgrocerystore@gmail.com" style="text-decoration: none; color: rgb(255, 255, 255);">momgrocerystore@gmail.com</a></p>
+              <p class="fw-semibold">
+                  <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: rgb(255, 255, 255);">+91 9145724878</a></p>
+                  <p class="fw-semibold">
+                      <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: rgb(255, 255, 255);">+91 9145346103</a></p> 
+          </div>
+          <hr class="mb-4">
+          <div class="col-md-7 col-lg-8">
+              <p class="fw-semibold">Copyright ©2024 All  rights reserved By:
+                  <a href="#" style="text-decoration: none;">
+                  <strong style="color: #fafafa;" ></strong></a>
+              </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+                  <ul class="list-unstyled list-inline">
+                      <li>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                             <img src="../photos/facebook.png" alt="" height="32">
+                          </a>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                              <img src="../photos/twitter.png" alt="" height="32">
+                          </a>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                            <img src="../photos/instagram.png" alt="" height="32">
+                        </a>
+                     
+                      <a class="btn btn-outline-light btn-floating m-1" href="#">
+                          <img src="../photos/github.png" alt="" height="32">
+                      </a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#">
+                            <img src="../photos/linkedin.png" alt="" height="32">
+                        </a>
+                         
+
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="container">
+      <p>&copy; 2024 My Grocery Store</p>
+    </div>
+  </footer>
+
+</body>
+</html>

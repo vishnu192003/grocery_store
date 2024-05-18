@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOM's Grocery Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body  background="./background/4.jpg" style="background-repeat: no-repeat; background-size: 100%;" class="img-fluid">
+  
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-header">
+
+    <div class="container ">
+      
+      <a class="navbar-brand" href="./index.html" >The MOM's Grocery Store </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./pages/product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./pages/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Home Section -->
+  <section id="home" class="py-5 text-center">
+    <div class="container navbar-heading">
+      <h1>Welcome to MOM's Grocery Store!!</h1>
+      <p class="lead">Your one-stop shop for fresh groceries!</p>
+    </div>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<div class="row container2">
+  <div class="col-md-6 ">
+    <h2 >Mama's Market-</h2>
+    <br>
+    <br>
+   <h3> "Where Every Ingredient is Chosen with Love, Just Like Mom Would"</h3>
+  </div>
+  <div class="col-md-6">
+    <img src="./background/20.jpg" class="img-fluid" alt="...">
+  </div>
+</div>
+ 
+ 
+
+  <!-- About Section -->
+
+  
+  <section id="about" class="py-5">
+        
+
+    
+    <div class="container container-form1">
+
+<br>
+<br>
+      <img src="./background/33.jpg" class="img-fluid col-md " alt="...">
+
+      <br>
+      <br>
+      <br>
+
+
+   <div class="container2">
+    <h2 class="">Mom's Grocery Shop - Shopping List</h2>
+    <form id="shoppingListForm">
+      <div class="form-group ">
+        <input type="text" class="form-control" id="item" placeholder="Enter item">
+      </div>
+      <button type="submit" class="btn btn-dark btn mx-auto">Add Item</button>
+    </form>
+    <ul class="list-group mt-3" id="shoppingList"></ul>
+  </div>
+   </div>
+  </section>
+
+  <div class="container container-form1">
+    <img src="./background/25.jpg" class="img-fluid col-md " alt="...">
+<br>
+<br>
+<br>
+   <div class="container2">
+    <h2 class="">Mom's Special List</h2>
+    <form id="specialListForm">
+      <div class="form-group row container2">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" id="milk" value="milk">
+          <label class="form-check-label" for="milk">Milk</label>
+        </div>
+        <br>
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" id="eggs" value="eggs">
+          <label class="form-check-label" for="eggs">Eggs</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bread" value="bread">
+          <label class="form-check-label" for="bread">Bread</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fruits" value="fruits">
+          <label class="form-check-label" for="fruits">Fruits</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="vegetables" value="vegetables">
+          <label class="form-check-label" for="vegetables">Vegetables</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="cleaningSupplies" value="cleaningSupplies">
+          <label class="form-check-label" for="cleaningSupplies">Cleaning Supplies</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="personalCare" value="personalCare">
+          <label class="form-check-label" for="personalCare">Personal Care Items</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="babyProducts" value="babyProducts">
+          <label class="form-check-label" for="babyProducts">Baby Products</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="petSupplies" value="petSupplies">
+          <label class="form-check-label" for="petSupplies">Pet Supplies</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="officeSupplies" value="officeSupplies">
+          <label class="form-check-label" for="officeSupplies">Office Supplies</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="snacks" value="snacks">
+          <label class="form-check-label" for="snacks">Snacks</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="beverages" value="beverages">
+          <label class="form-check-label" for="beverages">Beverages</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="spices" value="spices">
+          <label class="form-check-label" for="spices">Spices</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="condiments" value="condiments">
+          <label class="form-check-label" for="condiments">Condiments</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bakingSupplies" value="bakingSupplies">
+          <label class="form-check-label" for="bakingSupplies">Baking Supplies</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="cannedGoods" value="cannedGoods">
+          <label class="form-check-label" for="cannedGoods">Canned Goods</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+   </div>
+  </div>
+  <!-- Products Section -->
+ 
+  <hr>
+ 
+  <div class="container2">
+    <div class="row">
+      <div class="col-md-3 ">
+        <a href="./pages/product.html#fresh-fruits">
+          <img src="./photos/1.jpg" class="img-thumbnail product " alt="Image 1">
+        </a>
+        <br>
+        <br>
+       <h4 class=" circle-text"> Fresh Fruits</h4>
+      </div>
+      <div class="col-md-3 ">
+        <a href="./pages/product.html#vegtables">
+          <img src="./photos/12.jpg" class="img-thumbnail product" alt="Image 2">
+        </a>
+        <br>
+        <br>
+        <h4 class=" circle-text"> Vegtables</h4>
+      </div>
+      <div class="col-md-3 ">
+        <a href="./pages/product.html#dairy-item">
+          <img src="./photos/28.jpg" class="img-thumbnail product" alt="Image 3">
+        </a>
+        <br>
+        <br>
+        <h4 class=" circle-text"> Dairy</h4>
+      </div>
+      <div class="col-md-3 ">
+        <a href="./pages/product.html#hygine-beauty">
+          <img src="./photos/36.jpg" class="img-thumbnail product" alt="Image 4">
+        </a>
+        <br>
+        <br>
+        <h4 class=" circle-text"> Beauty</h4>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Section -->
+   
+  </section>
+
+  
+
+    <div class="container2">
+      <h2 class="p-header">YouTube Videos</h2>
+
+      <br><br><br>
+      <div class="row">
+        <div class="col-md-4">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/video3" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+      <hr>
+    <div class="container2">
+      <h2 class="p-header">Image Gallery</h2> <br><br><br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./background/32.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/22.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/31.jpg" class="img-fluid">
+        </div>
+      </div>
+      <br>
+<br>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./background/8.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/10.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/9.jpg" class="img-fluid">
+        </div>
+      </div>
+      
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./background/16.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/21.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./background/20.jpg" class="img-fluid">
+        </div>
+      </div>  
+    </div>
+      
+
+
+     
+    </div>
+<br>
+<br>
+<br>
+    <div class="card mb-3">
+      <img src="./background/26.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+      </div>
+      
+
+     
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">MOM's Grocery Store</h5>
+              <p class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, debitis blanditiis modi fugit quae ex excepturi voluptatibus, labore, adipisci iste sit atque ea! Quis nisi cumque earum porro, nostrum ad.
+              </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">Quick Links</h5>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">TheProviders</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Creativity</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">SourceFiles</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+              </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color:#ffffff">Useful Links</h5>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">TheProviders</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Creativity</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">SourceFiles</a>
+              </p>
+              <p class="fw-semibold">
+                  <a href="#" class="text-light" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold" style="color: #ffffff">Contact Us</h5>
+              <p class="fw-semibold">
+                          
+                  <i class="fas fa-home me-3"></i><a href="#" style="text-decoration: none; color: rgb(255, 255, 255);">Hingna,Nagpur-440016</a></p>
+              <p class="fw-semibold">
+                  <i class="fas fa-envelope me-3"></i><a href="momgrocerystore@gmail.com" style="text-decoration: none; color: rgb(255, 255, 255);">momgrocerystore@gmail.com</a></p>
+              <p class="fw-semibold">
+                  <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: rgb(255, 255, 255);">+91 9145724878</a></p>
+                  <p class="fw-semibold">
+                      <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: rgb(255, 255, 255);">+91 9145346103</a></p> 
+          </div>
+          <hr class="mb-4">
+          <div class="col-md-7 col-lg-8">
+              <p class="fw-semibold">Copyright ©2024 All  rights reserved By:
+                  <a href="#" style="text-decoration: none;">
+                  <strong style="color: #fafafa;" ></strong></a>
+              </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+                  <ul class="list-unstyled list-inline">
+                      <li>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                             <img src="./photos/facebook.png" alt="" height="32">
+                          </a>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                              <img src="./photos/twitter.png" alt="" height="32">
+                          </a>
+                          <a class="btn btn-outline-light btn-floating m-1" href="#">
+                            <img src="./photos/instagram.png" alt="" height="32">
+                        </a>
+                     
+                      <a class="btn btn-outline-light btn-floating m-1" href="#">
+                          <img src="./photos/github.png" alt="" height="32">
+                      </a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#">
+                            <img src="./photos/linkedin.png" alt="" height="32">
+                        </a>
+                         
+
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="container">
+      <p>&copy; 2024 My Grocery Store</p>
+    </div>
+  </footer>
+
+    </div>
+
+   
+
+    <script src="./index.js">
+    </script>
+</body>
+</html> 
